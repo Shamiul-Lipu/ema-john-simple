@@ -29,11 +29,11 @@ const Login = () => {
             <form onSubmit={handleSignIn}>
                 <div className='form-control'>
                     <label htmlFor="email">Eamil</label>
-                    <input type="email" name="email" id="" required />
+                    <input type="email" name="email" id="loginEmail" required />
                 </div>
                 <div className='form-control'>
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="" required />
+                    <input type="password" name="password" id="loginPassword" required />
                 </div>
                 <input className='btn-submit' type="submit" value="Login" />
             </form>

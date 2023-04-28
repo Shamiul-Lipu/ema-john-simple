@@ -28,10 +28,10 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser)
+                // console.log(loggedUser)
             })
             .catch(error => {
-                console.log(error);
+                // console.log(error);
                 setError(error.message)
             })
     }
@@ -43,15 +43,15 @@ const SignUp = () => {
             <form onSubmit={handleSingUp}>
                 <div className='form-control'>
                     <label htmlFor="email">Eamil</label>
-                    <input type="email" name="email" id="" required />
+                    <input type="email" name="email" id="email" required />
                 </div>
                 <div className='form-control'>
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="" required />
+                    <input type="password" name="password" id="password" required />
                 </div>
                 <div className='form-control'>
                     <label htmlFor="password">Confirm Password</label>
-                    <input type="password" name="confirm" id="" required />
+                    <input type="password" name="confirm" id="confirm" required />
                 </div>
                 <input className='btn-submit' type="submit" value="SignUp" />
             </form>
